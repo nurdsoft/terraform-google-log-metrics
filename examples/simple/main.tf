@@ -5,7 +5,7 @@
 # from Cloud Run services.
 # -----------------------------------------------------------------------------
 module "log_metric" {
-  source = "../.."
+  source = "git::https://github.com/nurdsoft/terraform-google-log-metrics.git?ref=v1.0.0"
 
   project_id       = var.project_id
   metric_name      = var.metric_name
